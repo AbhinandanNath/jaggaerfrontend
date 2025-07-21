@@ -1,0 +1,8 @@
+.starRatingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(255, 226, 3);
+    cursor: pointer;
+}
