@@ -1,18 +1,23 @@
 import CartButton from "../Cart/CartButton/CartButton";
 import classes from "./Header.module.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
-const pageTitles = {
-  "/": "Products",
-  "/productDetails": "Product Details",
-  "/cart": "Cart",
-};
+const pageTitles = [
+  { path: "/", title: "Products" },
+  { path: "/productDetails", title: "Product Details" },
+  { path: "/cart", title: "Cart" },
+];
 
 function Header() {
   const location = useLocation();
   const navigate = useNavigate();
-  const title = pageTitles[location.pathname] || "Product";
+  const { name } = useParams();
+  console.log(name);
 
+  let title = pageTitles[location.pathname] || "Product";
+  if (name) {
+    title = `Product Details`;
+  }
   const handleBack = () => {
     navigate(-1);
   };
