@@ -1,18 +1,15 @@
 .cartContainer {
-    background-color: #f3f4f6;
-    padding: 1rem;
-    top: 2rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    margin: 3rem auto;
     overflow-y: auto;
-    height: 85vh;
+    width: min(32rem, 100%);
+
 }
 
 .cartSection {
-    width: 100%;
-    max-width: 48rem;
+
+    margin: 0rem auto;
+
 }
 
 .cartTitle {
@@ -40,16 +37,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 2rem;
     padding: 1rem;
     background-color: #ffffff;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border: 1px solid #e5e7eb;
-    width: 100%;
-    max-width: 42rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .totalText {
@@ -62,9 +54,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin: 1rem;
     gap: 1rem;
-    width: 100%;
 }
 
 .purchaseButton,

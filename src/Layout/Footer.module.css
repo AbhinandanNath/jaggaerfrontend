@@ -1,32 +1,33 @@
 .footerContainer {
-    height: 0.5rem;
-    padding: 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 2.5rem;
     position: fixed;
     bottom: 0rem;
     left: 0rem;
     right: 0rem;
-    z-index: 1000;
-    width: 99%;
-    /* background-color: #616467; */
-    background: linear-gradient(90deg, #616467 0%, #797d82);
-    color: #ffffff;
+    background: transparent;
+    color: #9ca3af;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     gap: 0.5rem;
     font-family: "Winky Rough", system-ui;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerText {
     font-size: 0.875rem;
+    color: #9ca3af;
 }
 
 .footerLinks {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    color: #9ca3af;
 }
 
 .footerLink {
@@ -37,5 +38,6 @@
 }
 
 .footerLink:hover {
-    color: #ffffff;
+    color: #060606;
+    transform: scale(1.05);
 }

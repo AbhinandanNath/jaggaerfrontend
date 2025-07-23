@@ -1,9 +1,10 @@
 .productPage {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.9vw;
-    position: absolute;
-    top: 5rem;
-    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
     overflow-y: auto;
+    height: min(10rem, 100%);
 }
